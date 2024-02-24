@@ -1,0 +1,9 @@
+.header-wrapper {
+  padding: 20px 150px;
+  background-color: var(--dark-header-color);
+}
+.title {
+  color: var(--dark-write-color);
+  font-size: 32px;
+  font-weight: bold;
+}

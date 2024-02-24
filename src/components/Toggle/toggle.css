@@ -1,0 +1,15 @@
+.toggle-container {
+  position: absolute;
+  top: 30px;
+  right: 150px;
+}
+
+.toggle {
+  visibility: hidden;
+}
+
+label {
+  font-size: 16px;
+  cursor: pointer;
+  color: var(--dark-write-color);
+}
