@@ -3,7 +3,9 @@ const Header = () => {
   return (
     <header>
       <div className="header-wrapper">
-        <h1 className="title">Where in the world?</h1>
+        <div className="container">
+          <h1 className="title">Where in the world?</h1>
+        </div>
       </div>
     </header>
   );
