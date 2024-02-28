@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import apiClient from "../services/api-client";
+import apiClient, { CanseledError } from "../services/api-client";
 const useCountries = () => {
   const [countries, setCountries] = useState([]);
   const [isLoading, setLoading] = useState(false);
@@ -16,6 +16,7 @@ const useCountries = () => {
         setLoading(false);
       })
       .catch((err) => {
+        if (err instanceof CanseledError) return;
         setError(err.massage);
         setLoading(false);
       });

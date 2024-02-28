@@ -9,10 +9,19 @@ const CountryCard = ({ country }) => {
         alt={country.flags.alt}
       />
       <div className="card-body">
-        <h2 className="card-title"></h2>
-        <p className="population"></p>
-        <p className="region"></p>
-        <p className="capital"></p>
+        <h3 className="card-title">{country.name.common}</h3>
+        <p className="population">
+          {" "}
+          <b>Population:</b> {country.population}
+        </p>
+        <p className="region">
+          {" "}
+          <b>Region:</b> {country.region}
+        </p>
+        <p className="capital">
+          {" "}
+          <b>Capital:</b> {country.capital}
+        </p>
       </div>
     </div>
   );
