@@ -12,11 +12,11 @@ const useCountries = () => {
     apiClient
       .get("/all", { signal: controller.signal })
       .then((res) => {
-        console.log(res.data);
+        setCountries(res.data);
         setLoading(false);
       })
       .catch((err) => {
-        setError(err.message);
+        setError(err.massage);
         setLoading(false);
       });
 
